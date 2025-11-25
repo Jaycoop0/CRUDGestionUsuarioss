@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using CRUDGestionUsuarios.Data;
 using CRUDGestionUsuarios.Models;
-
+// Cambio desde feature/login-form
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<AppDbContext>(options =>
@@ -24,7 +24,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-// CRUD de Usuarios
+Console.WriteLine("Cambio desde la rama feature/login-form");
+
+// Cambio de la rama feature/login-form
+
 
 app.MapGet("/users", async (AppDbContext db) =>
     await db.Users.ToListAsync());
