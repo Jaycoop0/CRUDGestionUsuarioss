@@ -69,4 +69,3 @@ app.MapDelete("/users/{id}", async (int id, AppDbContext db) =>
 
 app.Run();
 
-// Archivo creado para habilitar los Pull Requests de la rama 
